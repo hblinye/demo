@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: ""
+    username: ""
+    password: ""
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    view:
+      prefix: classpath:/templates/
+      suffix: .html
+server:
+  port: 8089
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.example.demo.model
